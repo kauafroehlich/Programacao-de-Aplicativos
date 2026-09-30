@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo ADS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo ADS</h1>
+        <p>Escolha seus professores e finalize sua adoção no Four Chan</p>
+    </header>
+
+    <button onclick="adicionarCarrinho()">Carrinho = <span id="qtd-carrinho">0</span></button>
+    
+    <!-- CADA DIV É UM PRODUTO -->
+     <div class="produto" onclick="adicionarCarrinho('1','Alceu','76,67')">
+        <div class="foto" style="background-image: url('fotos/alceu.jpg');"></div>
+        <div class="infos">
+            <h1>Alceu</h1>
+            <p>Professor bom, faz de tudo.</p>
+        </div>
+        <div class="preco-item">
+            <h1 class="preco">R$ 76,67</h1>
+        </div>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
